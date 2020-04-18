@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZoomConnection.Models
 {
-    public class GetMeetingResponse
+    public class GetMeetingResponseModel
     {
         [JsonProperty("uuid")]      //Unique Meeting Id, double encode the UUId if it begins with'/' or conatins '//'
         public string Uuid { get; set; }
@@ -66,7 +66,7 @@ namespace ZoomConnection.Models
         public GetMeetingResponseOccurances Occurances { get; set; }
 
         [JsonProperty("settings")]
-        public GetMeetingResponseSetting Settings { get; set; }
+        public GetMeetingResponseSettings Settings { get; set; }
 
         [JsonProperty("recurrence")]
         public GetMeetingResponseRecurrence Recurrence { get; set; }
@@ -97,7 +97,7 @@ namespace ZoomConnection.Models
         public string Status { get; set; }
 
     }
-    public class GetMeetingResponseSetting
+    public class GetMeetingResponseSettings
     {
         [JsonProperty("host_video")]    //start video when host joins
         public bool HostVideo { get; set; }

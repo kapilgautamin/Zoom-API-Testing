@@ -10,29 +10,26 @@ namespace ZoomConnection.Controllers
 {
     public class HomeController : Controller
     {
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            Connection connect = new Connection();
-            var zoomResponse = await connect.GetMeeting();
-            return Ok(zoomResponse);
-
-            //var createMeetingResponse = await connect.CreateMeeting();
-            //return Ok(createMeetingResponse);
-
+            return View();
         }
 
-        public IActionResult About()
+        public async Task <IActionResult> GetMeeting()
         {
             ViewData["Message"] = "Your application description page.";
 
-            return View();
+            ConnectionModel connect = new ConnectionModel();
+            var zoomResponse = await connect.GetMeeting();
+            return Ok(zoomResponse);
         }
 
-        public IActionResult Contact()
+        public async Task<IActionResult> CreateMeeting()
         {
             ViewData["Message"] = "Your contact page.";
-
-            return View();
+            ConnectionModel connect = new ConnectionModel();
+            var createMeetingResponse = await connect.CreateMeeting();
+            return Ok(createMeetingResponse);
         }
 
         public IActionResult Privacy()
