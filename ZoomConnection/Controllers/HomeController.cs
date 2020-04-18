@@ -13,11 +13,11 @@ namespace ZoomConnection.Controllers
         public async Task<IActionResult> Index()
         {
             Connection connect = new Connection();
-            //var zoomResponse = await connect.GetMeeting();
-            //return Ok(zoomResponse);
+            var zoomResponse = await connect.GetMeeting();
+            return Ok(zoomResponse);
 
-            var createMeetingResponse = await connect.CreateMeeting();
-            return Ok(createMeetingResponse);
+            //var createMeetingResponse = await connect.CreateMeeting();
+            //return Ok(createMeetingResponse);
 
         }
 

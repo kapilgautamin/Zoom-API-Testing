@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uxRjfWtHFo7ONC5FwdptJS57Ybl6Sx3CQZQBwa42wpmNilsKzvh+G+u+9AzAEIWHC5SKJgX9t011QMMlZ7NzAw==",
+  "dgSpecHash": "iM9piRGQmD7pI0CLyMMpXj3WXFyneD82Pb/MyN6sZDRfu58LR8bmoct31nYLDjQ25U5/cJ5xqAnwg9/3QFb5Lw==",
   "success": true,
-  "projectFilePath": "D:\\_Current\\Karmaniti\\ZOOM_API\\ZoomConnection\\ZoomConnection\\ZoomConnection.csproj",
+  "projectFilePath": "D:\\_Current\\Karmaniti\\Zoom-API-Testing\\ZoomConnection\\ZoomConnection.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

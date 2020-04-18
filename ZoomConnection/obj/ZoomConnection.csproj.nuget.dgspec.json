@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Current\\Karmaniti\\ZOOM_API\\ZoomConnection\\ZoomConnection\\ZoomConnection.csproj": {}
+    "D:\\_Current\\Karmaniti\\Zoom-API-Testing\\ZoomConnection\\ZoomConnection.csproj": {}
   },
   "projects": {
-    "D:\\_Current\\Karmaniti\\ZOOM_API\\ZoomConnection\\ZoomConnection\\ZoomConnection.csproj": {
+    "D:\\_Current\\Karmaniti\\Zoom-API-Testing\\ZoomConnection\\ZoomConnection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Current\\Karmaniti\\ZOOM_API\\ZoomConnection\\ZoomConnection\\ZoomConnection.csproj",
+        "projectUniqueName": "D:\\_Current\\Karmaniti\\Zoom-API-Testing\\ZoomConnection\\ZoomConnection.csproj",
         "projectName": "ZoomConnection",
-        "projectPath": "D:\\_Current\\Karmaniti\\ZOOM_API\\ZoomConnection\\ZoomConnection\\ZoomConnection.csproj",
+        "projectPath": "D:\\_Current\\Karmaniti\\Zoom-API-Testing\\ZoomConnection\\ZoomConnection.csproj",
         "packagesPath": "C:\\Users\\Kapil Gautam\\.nuget\\packages\\",
-        "outputPath": "D:\\_Current\\Karmaniti\\ZOOM_API\\ZoomConnection\\ZoomConnection\\obj\\",
+        "outputPath": "D:\\_Current\\Karmaniti\\Zoom-API-Testing\\ZoomConnection\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
