@@ -10,6 +10,7 @@ namespace ZoomConnection.Controllers
 {
     public class HomeController : Controller
     {
+        ConnectionModel connect = new ConnectionModel();
         public IActionResult Index()
         {
             return View();
@@ -17,24 +18,22 @@ namespace ZoomConnection.Controllers
 
         public async Task <IActionResult> GetMeeting()
         {
-            ViewData["Message"] = "Your application description page.";
-
-            ConnectionModel connect = new ConnectionModel();
-            var zoomResponse = await connect.GetMeeting();
-            return Ok(zoomResponse);
+            //ViewData["Message"] = "Your application description page.";
+            var getMeetingResponse = await connect.GetMeeting();
+            return Ok(getMeetingResponse);
         }
 
         public async Task<IActionResult> CreateMeeting()
         {
-            ViewData["Message"] = "Your contact page.";
-            ConnectionModel connect = new ConnectionModel();
+            //ViewData["Message"] = "Your contact page.";
             var createMeetingResponse = await connect.CreateMeeting();
             return Ok(createMeetingResponse);
         }
 
-        public IActionResult Privacy()
+        public async Task<IActionResult> UpdateMeeting()
         {
-            return View();
+            var updatingResponse = await connect.UpdateMeeting();
+            return Ok(updatingResponse);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
