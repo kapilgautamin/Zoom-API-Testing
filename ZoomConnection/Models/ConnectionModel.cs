@@ -111,7 +111,7 @@ namespace ZoomConnection.Models
         public async Task<HttpResponseMessage> AddUserToMeeting(string meetingId, AddUserRequestModel userInfo)
         {
             //POST Uri: https://api.zoom.us/v2/meetings/{meetingId}/registrants"
-            //Returns 204 status code on success
+            
             client.DefaultRequestHeaders.Authorization = authorizationKey;
 
             var payload = new StringContent(JsonConvert.SerializeObject(userInfo), System.Text.Encoding.UTF8, "application/json");

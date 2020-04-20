@@ -48,11 +48,9 @@ namespace ZoomConnection.Controllers
         public async Task<IActionResult> AddUserToMeeting(string meetingId, AddUserRequestModel reqBody)
         {
             // TODO: parse body and validate request
-            Console.WriteLine("Testing Logging Function");
-            Console.WriteLine(JsonConvert.SerializeObject(reqBody));
 
             var response = await connect.AddUserToMeeting(meetingId, reqBody);
-            
+
             return Ok(response);
         }
 
